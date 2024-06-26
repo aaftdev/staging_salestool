@@ -1,0 +1,127 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+}
+
+.alert {
+  font-size: 1.4rem;
+}
+
+.log-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 30% 70%;
+}
+@media only screen and (max-width: 600px) {
+  .log-container {
+    grid-template-columns: 100%;
+  }
+}
+.log-container-left {
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.log-container-left form {
+  width: 100%;
+}
+.log-container-left form .logo-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.log-container-left form .logo-box img {
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.log-container-left form h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.log-container-left form p {
+  font-size: 1.4rem;
+  text-align: center;
+  opacity: 0.6;
+}
+.log-container-left form .form-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.log-container-left form .form-group .form-control {
+  outline-color: transparent;
+  border-color: transparent;
+  background-color: #fff !important;
+  font-size: 1.4rem;
+}
+.log-container-left form .form-group i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.log-container-left form .form-group label,
+.log-container-left form .form-group .invalid-feedback {
+  font-size: 1.3rem;
+}
+.log-container-left form .form-group div {
+  flex: 1;
+}
+.log-container-left form .form-check input {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+.log-container-left form .form-check label {
+  font-size: 1.4rem;
+}
+.log-container-left .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.log-container-left .row .btn-danger {
+  width: 10rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.log-container-left .row .btn-link {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #333;
+}
+.log-container-right {
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .log-container-right {
+    display: none;
+  }
+}
+.log-container-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.log-container-right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

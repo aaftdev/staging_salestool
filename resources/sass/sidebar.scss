@@ -1,0 +1,143 @@
+// html {
+//     font-size: 62.5%;
+// }
+
+#navbar {
+    position: fixed;
+    width: calc(100% - 200px);
+    right: 0;
+    z-index: 10;
+
+    @media only screen and (max-width: 600px) {
+        width: calc(100% - 50px);
+    }
+}
+
+#sidebar {
+    padding: 0.8rem 0rem;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #252b3b;
+
+    @media only screen and (max-width: 600px) {
+        width: 50px;
+    }
+
+    .container {
+        .logo-box {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .sidebar-list {
+            margin-top: 1rem;
+
+            @media only screen and (max-width: 600px) {
+                span {
+                    display: none !important;
+                }
+            }
+
+            &-title {
+                font-size: 1rem;
+                color: #8590a5;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-bottom: 1rem;
+
+                @media only screen and (max-width: 600px) {
+                    display: none;
+                }
+            }
+
+            &-link {
+                cursor: pointer;
+                font-size: 1.1rem;
+                color: #8590a5;
+                display: flex;
+                align-items: center;
+                padding: 0.5rem 0rem;
+                text-decoration: none;
+
+                i {
+                    font-size: 1.1rem;
+                }
+
+                span {
+                    display: inline-block;
+                    margin-left: 0.3rem;
+                }
+
+                &:hover {
+                    color: #d7e4ec;
+                }
+            }
+
+            &-link.active {
+                color: #d7e4ec;
+            }
+
+
+            &-dropdown {
+                transition: all 0.3s linear;
+                position: relative;
+
+                &-title {
+                    cursor: pointer;
+                    font-size: 1.1rem;
+                    color: #8590a5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0.5rem 0rem;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #d7e4ec;
+                    }
+
+                    i {
+                        font-size: 1.1rem;
+                    }
+
+                    span {
+                        display: inline-block;
+                        margin-left: 0.3rem;
+                    }
+                }
+
+                &-title.active {
+                    color: #d7e4ec;
+                }
+
+                &-content {
+                    @media only screen and (max-width: 600px) {
+                        position: absolute;
+                        left: 50px;
+                        width: 200px;
+                        background-color: #252b3b;
+                        top: 0;
+                        left: 40px;
+                    }
+
+                    a {
+                        padding: 0.3rem;
+                        padding-left: 1.2rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+#thankyou {
+    .check-icon {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        .bx {
+            font-size: 136px;
+            color: #c5d508;
+        }
+    }
+
+    .title {
+        text-align: center;
+        font: bold 40px 'Arial';
+        color: #333;
+    }
+
+    p {
+        text-align: center;
+        font: normal 24px/45px 'Arial';
+        color: #333;
+    }
+
+    button {
+        background-color: transparent;
+        border: 2px solid #5c4ddb;
+        font: bold 16px/32px 'Arial';
+        color: #5c4ddb;
+        width: 200px;
+        height: 51px;
+        border-radius: 25px;
+    }
+
+    .description {
+        text-align: center;
+
+        h4 {
+            font: bold 16px/32px 'Arial';
+            color: #333;
+            border-bottom: 1px solid rgba(#707070, 0.2);
+        }
+
+        .table {
+            tr {
+                border-color: transparent;
+            }
+
+            th {
+                text-align: right;
+                font: bold 18px/32px 'Arial';
+                color: #232323;
+                width: 50%;
+            }
+
+            td {
+                text-align: left;
+                font: normal 18px/32px 'Arial';
+                color: #232323;
+            }
+        }
+    }
+}

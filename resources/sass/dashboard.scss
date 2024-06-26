@@ -1,0 +1,38 @@
+#dashboard {
+    .dashboard-card {
+        background-color: #fff;
+        padding: 1rem 0.95rem;
+        transform: scale(0.95);
+
+        &-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &-title {
+                h4 {
+                    font-size: 1.2rem;
+                    color: #505d69;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    color: #343a40;
+                }
+            }
+
+            .bx {
+                font-size: 1.5rem;
+                color: #5664d2;
+            }
+        }
+
+        &-bottom {
+            border-top: 1px solid #eaeaea;
+            padding-top: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

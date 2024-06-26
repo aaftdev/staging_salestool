@@ -1,0 +1,145 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fff;
+}
+
+.alert {
+    font-size: 1.4rem;
+}
+
+.log-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 30% 70%;
+
+    @media only screen and (max-width: 600px) {
+        grid-template-columns: 100%;
+    }
+
+    &-left {
+        padding: 1rem 3rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        form {
+            width: 100%;
+
+            .logo-box {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+
+                img {
+                    height: 30px;
+                    object-fit: contain;
+                }
+            }
+
+            h1 {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+
+            p {
+                font-size: 1.4rem;
+                text-align: center;
+                opacity: 0.6;
+            }
+
+            .form-group {
+                display: flex;
+                align-items: center;
+                border: 1px solid #eaeaea;
+                border-radius: 4px;
+                margin-bottom: 1rem;
+                padding: 1rem;
+
+                .form-control {
+                    outline-color: transparent;
+                    border-color: transparent;
+                    background-color: #fff !important;
+                    font-size: 1.4rem;
+                }
+
+                i {
+                    font-size: 2rem;
+                    margin-right: 1rem;
+                }
+
+                label,
+                .invalid-feedback {
+                    font-size: 1.3rem;
+                }
+
+                div {
+                    flex: 1;
+                }
+            }
+
+            .form-check {
+
+                input {
+                    margin-right: 1rem;
+                    margin-top: 0.5rem;
+                }
+
+                label {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+
+            .btn-danger {
+                width: 10rem;
+                font-size: 1.4rem;
+                margin-bottom: 2rem;
+                padding: 1rem;
+            }
+
+            .btn-link {
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: #333;
+            }
+        }
+    }
+
+    &-right {
+        position: relative;
+
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: .4);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

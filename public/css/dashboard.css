@@ -1,0 +1,29 @@
+#dashboard .dashboard-card {
+  background-color: #fff;
+  padding: 1rem 0.95rem;
+  transform: scale(0.95);
+}
+#dashboard .dashboard-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#dashboard .dashboard-card-content-title h4 {
+  font-size: 1.2rem;
+  color: #505d69;
+}
+#dashboard .dashboard-card-content-title p {
+  font-size: 1.5rem;
+  color: #343a40;
+}
+#dashboard .dashboard-card-content .bx {
+  font-size: 1.5rem;
+  color: #5664d2;
+}
+#dashboard .dashboard-card-bottom {
+  border-top: 1px solid #eaeaea;
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
